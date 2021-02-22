@@ -49,4 +49,4 @@ jobs:
         if: ${{ steps.translator.outputs.has-new-translations }} == 'true'
         with:
           title: '${{ steps.translator.outputs.summary-title }}'
-          commit-message: '${{ steps.translator.outputs.summary-details }}'
+          body: '${{ steps.translator.outputs.summary-details }}'
